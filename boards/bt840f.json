@@ -1,0 +1,55 @@
+{
+  "build": {
+    "arduino":{
+      "ldscript": "nrf52840_s140_v6.ld"
+    },
+    "core": "nRF5",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DARDUINO_NRF52840_FEATHER -DNRF52840_XXAA -DUSB_VID=0x239A -DUSB_PID=0x8029",
+    "f_cpu": "64000000L",
+    "mcu": "nrf52840",
+    "variant": "bt840f",
+    "bsp": {
+      "name": "adafruit"
+    },
+    "softdevice": {
+      "sd_flags": "-DS140",
+      "sd_name": "s140",
+      "sd_version": "6.1.1",
+      "sd_fwid": "0x00B6"
+    },
+    "bootloader": {
+      "settings_addr": "0xFF000"
+    }
+  },
+  "connectivity": [
+    "bluetooth"
+  ],
+  "debug": {
+    "default_tools": [
+      "jlink"
+    ],
+    "jlink_device": "nRF52840_xxAA",
+    "svd_path": "nrf52840.svd"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "Fanstel BT840F",
+  "upload": {
+    "maximum_ram_size": 248832,
+    "maximum_size": 815104,
+    "require_upload_port": true,
+    "speed": 115200,
+    "protocol": "jlink",
+    "protocols": [
+      "jlink",
+      "nrfjprog",
+      "stlink",
+      "cmsis-dap",
+      "blackmagic"
+    ]
+  },
+  "url": "https://www.fanstel.com/bt40f-nrf5340",
+  "vendor": "Fanstel"
+}
