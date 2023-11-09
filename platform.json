@@ -76,7 +76,7 @@
     "framework-arduino-mbed-seeed": {
       "type": "framework",
       "optional": true,
-      "version": "https://github.com/maxgerhardt/framework-mbed-seeed.git"
+      "version": "https://github.com/josephduchesne/framework-mbed-seeed.git"
     },
     "framework-cmsis": {
       "type": "framework",
